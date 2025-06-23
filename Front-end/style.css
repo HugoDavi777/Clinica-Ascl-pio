@@ -1,0 +1,140 @@
+ body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f8fb;
+    }
+
+    /* Navbar */
+       .navbar, footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      width: 20px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar .options, .navbar .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+
+    .navbar .options a, .navbar .user {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Imagem abaixo da navbar */
+   .imagem-corpo { 
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .imagem-corpo img {
+      width: 100%;
+      max-width: 90%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Seção de consultas */
+    .consultas {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #e9f5fc;
+    }
+    .consulta {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+    }
+    .consulta h3 {
+      color: #0077b6;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0077b6;
+      color: white;
+      margin-top: 2rem;
+    }
+@media (max-width: 768px) {
+ 
+  .navbar .logo {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+  /* Imagem abaixo da navbar */
+.imagem-corpo {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.imagem-corpo img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de consultas */
+.consultas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e9f5fc;
+}
+.consulta {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 260px;
+  text-align: center;
+}
+.consulta h3 {
+  color: #0077b6;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077b6;
+  color: white;
+  margin-top: 2rem;
+}
+}
+

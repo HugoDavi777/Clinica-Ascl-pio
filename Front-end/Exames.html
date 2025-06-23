@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exames - Clínica Asclépio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_Exames.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://www.lee.org/blog/wp-content/uploads/2016/06/The-Rod-of-Asclepius.png" alt="Logo Clínica">
+      <span>Clínica Asclépio</span>
+    </div>
+    <div class="options">
+      <a href="index.html" >Início</a>
+      <a href="#" style="text-decoration: underline;">Exames</a>
+      <a href="#">Historico</a>
+    </div>
+    <div class="user">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Usuário" style="height: 30px; border-radius: 50%;">
+      <span>João</span>
+    </div>
+  </nav>
+
+  <div class="exame-container">
+        <label><strong>Escolha o seu Exame:</strong></label>
+        <label><input onchange="getExame(1)" type="radio" name="exame" /> Sangue</label>
+        <label><input onchange="getExame(2)" type="radio" name="exame" /> Urina</label>
+        <label><input onchange="getExame(3)" type="radio" name="exame" /> Fezes</label>
+      </div>
+
+  <div class="container">
+    <!-- Esquerda: Exames -->
+    <section class="Availicoes-conteiner">
+      <h2>Selecione os exames</h2>
+      <div class="Availicoes">
+      <!-- <label><input type="checkbox" value="Hemograma" data-preco="50"/> Hemograma (R$ 50)</label>
+      <label><input type="checkbox" value="Glicemia" data-preco="30"/> Glicemia (R$ 30)</label>
+      <label><input type="checkbox" value="Colesterol" data-preco="40"/> Colesterol (R$ 40)</label>
+      <label><input type="checkbox" value="Triglicerídeos" data-preco="35"/> Triglicerídeos (R$ 35)</label> -->
+      </div>
+    </section>
+
+    <!-- Direita: Resumo -->
+    <div class="resumo" id="resumo">
+      <h3>Resumo do Pedido</h3>
+      <div id="lista-exames"></div>
+      <hr>
+      <div class="resumo-item"><strong>Total:</strong> <span id="total">R$ 0</span></div>
+    </div>
+  </div>
+
+  <!-- Embaixo: Formulário -->
+  <div class="formulario">
+    <h2>Agendamento de Exame</h2>
+
+    <label for="data">Data:</label>
+    <input type="date" id="date" placeholder="Digite seu CPF">
+
+    <label for="horario">Horário Disponível:</label>
+    <select id="horario">
+      <option>08:00</option>
+      <option>09:00</option>
+      <option>10:00</option>
+      <option>11:00</option>
+      <option>14:00</option>
+    </select>
+
+   
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" placeholder="Digite seu CPF Para confirmar">
+
+    <button class="btn-marcar" onclick="marcarConsulta()">Marcar Consulta</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Clínica Asclépio - Todos os direitos reservados
+  </footer>
+
+  <script src="code_Exames.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f8fb;
+    }
+
+    .navbar, footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      width: 20px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar .options, .navbar .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar .options a, .navbar .user {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  .exame-container {
+    display: flex;
+    flex-direction: row; /* ← isso aqui é o que alinha lado a lado */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .Availicoes-conteiner {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .Availicoes-conteiner h2 {
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    .Availicoes-conteiner label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .resumo {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .resumo h3 {
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    .resumo-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .formulario {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto; /* centraliza horizontalmente e dá espaçamento vertical */
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    }
+
+
+    .formulario h2 {
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    .formulario label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .formulario select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .formulario input {
+      width: 97%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn-marcar {
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #0077b6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-marcar:hover {
+      background-color: #005f8a;
+    }
+
+    @media (max-width: 700px) {
+      .navbar .logo {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .exame-container {
+    flex-direction: column;
+    }
+
+      .container {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .formulario {
+        padding: 1rem;
+      
+      }
+
+      .formulario input {
+      width: 95%;
+    }
+    }
